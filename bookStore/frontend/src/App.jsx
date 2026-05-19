@@ -133,7 +133,7 @@ function App() {
   }
 
   return (
-    <div>
+    <div className="min-h-screen overflow-x-hidden">
       <div className={`transition-all duration-300 ${isCartOpen && !isAdminRoute ? "blur-sm pointer-events-none" : ""}`}>
         <Routes>
           <Route path='/' element={
