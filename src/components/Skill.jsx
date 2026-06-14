@@ -13,7 +13,7 @@ export default function Skill() {
 
                 <div className="flex flex-col md:flex-row gap-2">
                     {/* card 1 */}
-                    <div className="w-full md:w-1/2 glass glassHover card-accent card-lift flex flex-col rounded-xl sm:rounded-tl-4xl p-4 sm:p-6 ">
+                    <div className="w-full md:w-1/2 glass glassHover card-accent card-lift flex flex-col rounded-xl sm:rounded-none sm:rounded-tl-4xl p-4 sm:p-6 ">
                         <p className="text-gray-400 text-sm font-['Jetbrains_Mono'] mb-4">01</p>
                         <h3 className="text-xl font-semibold font-['Cabinet_Grotesk']"> Frontend </h3>
                         <p className="text-purple-100 text-xs sm:text-sm mt-2">
@@ -32,7 +32,7 @@ export default function Skill() {
                     </div>
 
                     {/* card 2 */}
-                    <div className="w-full md:w-1/2 glass glassHover card-accent card-lift flex flex-col rounded-xl sm:rounded-tr-4xl p-4 sm:p-6 ">
+                    <div className="w-full md:w-1/2 glass glassHover card-accent card-lift flex flex-col rounded-xl sm:rounded-none sm:rounded-tr-4xl p-4 sm:p-6 ">
                         <p className="text-gray-400 text-sm font-['Jetbrains_Mono'] mb-4">02</p>
                         <h3 className="text-xl font-semibold font-['Cabinet_Grotesk']">Backend & Database</h3>
                         <p className="text-purple-100 text-xs sm:text-sm mt-2">
@@ -53,7 +53,7 @@ export default function Skill() {
 
                 <div className="flex flex-col md:flex-row gap-2 mt-2">
                     {/* card 3 */}
-                    <div className="w-full md:w-1/2 glass glassHover card-accent card-lift flex flex-col rounded-xl sm:rounded-bl-4xl p-4 sm:p-6 ">
+                    <div className="w-full md:w-1/2 glass glassHover card-accent card-lift flex flex-col rounded-xl sm:rounded-none sm:rounded-bl-4xl p-4 sm:p-6 ">
                         <p className="text-gray-400 text-sm font-['Jetbrains_Mono'] mb-4">03</p>
                         <h3 className="text-xl font-semibold font-['Cabinet_Grotesk']">Tools</h3>
                         <p className="text-purple-100 text-xs sm:text-sm mt-2">
@@ -72,7 +72,7 @@ export default function Skill() {
                     </div>
 
                     {/* card 4 */}
-                    <div className="w-full md:w-1/2 glass glassHover card-accent card-lift flex flex-col rounded-xl sm:rounded-br-4xl p-4 sm:p-6 ">
+                    <div className="w-full md:w-1/2 glass glassHover card-accent card-lift flex flex-col rounded-xl sm:rounded-none sm:rounded-br-4xl p-4 sm:p-6 ">
                         <p className="text-gray-400 text-sm font-['Jetbrains_Mono'] mb-4">04</p>
                         <h3 className="text-xl font-semibold font-['Cabinet_Grotesk']">Deployment</h3>
                         <p className="text-purple-100 text-xs sm:text-sm mt-2">
