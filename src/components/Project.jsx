@@ -14,7 +14,7 @@ export default function Project() {
                 >
                     {/* Project Card  1 */}
                     <div className="glassCyan flex flex-col rounded-xl p-4 sm:p-6 shadow-lg transition-all duration-300 ease-out transform hover:-translate-y-2">
-                        <h3 className="text-lg sm:text-xl font-['Cabinet_Grotesk']">E-commerce BookStore</h3>
+                        <h3 className="text-lg sm:text-xl font-['Cabinet_Grotesk']">BookVerse</h3>
                         <p className="text-cyan-100 text-xs sm:text-sm mt-2">
                             Developed a full-stack bookstore e-commerce web application with responsive UI, product search/filtering, authentication, cart, and checkout functionality.
                         </p>

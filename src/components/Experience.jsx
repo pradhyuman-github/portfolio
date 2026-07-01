@@ -22,7 +22,7 @@ export default function Experience() {
                     </h3>
 
                     <p className="text-sm text-gray-400 mt-1">
-                        <span className="italic font-semibold"> Techlancea, Bhilwara </span> <br /> Internship • January 2026 - Present
+                        <span className="italic font-semibold"> Techlancea, Bhilwara </span> <br /> Internship • March 2026 - Present
                     </p>
 
                     <div className="text-gray-400 text-xs sm:text-base mt-4 space-y-2">
@@ -32,11 +32,11 @@ export default function Experience() {
                         </p>
                         <p className="flex items-baseline sm:items-center">
                             <span className="ri-arrow-right-s-fill text-base sm:text-xl font-bold text-purple-600"></span>
-                            Working on 2 client-based frontend projects, implementing reusable UI components and responsive layouts.
+                            Worked on 2 client-based frontend projects, implementing reusable UI components and responsive layouts.
                         </p>
                         <p className="flex items-baseline sm:items-center">
                             <span className="ri-arrow-right-s-fill text-base sm:text-xl font-bold text-purple-600"></span>
-                            Collaborating on frontend integration, debugging, and enhancing overall performance.
+                            Collaborating on frontend-backend integration, debugging, and enhancing overall performance.
                         </p>
                     </div>
                 </motion.div>

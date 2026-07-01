@@ -1,19 +1,40 @@
-import { motion } from "motion/react";
+import { motion } from "motion/react"; 4
+
+const cardEffect = {
+    hidden: {
+        opacity: 0,
+        y: 25,
+    },
+    visible: (delay) => ({
+        opacity: 1,
+        y: 0,
+        transition:
+        {
+            delay,
+            duration: 0.8,
+            ease: [0.22, 1, 0.36, 1]
+        }
+    })
+};
 
 export default function Skill() {
     return (
         <>
             <motion.section
                 className="max-w-4xl mx-auto px-6 py-12"
-                initial={{ opacity: 0, y: 40 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8 }}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.15 }}
             >
                 <h2 className="text-3xl font-['Cabinet_Grotesk'] font-semibold mb-6">Skills</h2>
 
-                <div className="flex flex-col md:flex-row gap-2">
+                <motion.div className="flex flex-col md:flex-row gap-3" >
                     {/* card 1 */}
-                    <div className="w-full md:w-1/2 glass glassHover card-accent card-lift flex flex-col rounded-xl sm:rounded-none sm:rounded-tl-4xl p-4 sm:p-6 ">
+                    <motion.div
+                        variants={cardEffect}
+                        custom={0} 
+                        className="w-full md:w-1/2 glass glassHover card-accent flex flex-col rounded-xl sm:rounded-none sm:rounded-tl-4xl p-4 sm:p-6 duration-300 ease-out transform hover:-translate-y-2"
+                    >
                         <p className="text-gray-400 text-sm font-['Jetbrains_Mono'] mb-4">01</p>
                         <h3 className="text-xl font-semibold font-['Cabinet_Grotesk']"> Frontend </h3>
                         <p className="text-purple-100 text-xs sm:text-sm mt-2">
@@ -29,10 +50,14 @@ export default function Skill() {
                                 </span>
                             ))}
                         </div>
-                    </div>
+                    </motion.div>
 
                     {/* card 2 */}
-                    <div className="w-full md:w-1/2 glass glassHover card-accent card-lift flex flex-col rounded-xl sm:rounded-none sm:rounded-tr-4xl p-4 sm:p-6 ">
+                    <motion.div
+                        variants={cardEffect}
+                        custom={0.25}
+                        className="w-full md:w-1/2 glass glassHover card-accent flex flex-col rounded-xl sm:rounded-none sm:rounded-tr-4xl p-4 sm:p-6 duration-300 ease-out transform hover:-translate-y-2"
+                    >
                         <p className="text-gray-400 text-sm font-['Jetbrains_Mono'] mb-4">02</p>
                         <h3 className="text-xl font-semibold font-['Cabinet_Grotesk']">Backend & Database</h3>
                         <p className="text-purple-100 text-xs sm:text-sm mt-2">
@@ -48,12 +73,16 @@ export default function Skill() {
                                 </span>
                             ))}
                         </div>
-                    </div>
-                </div>
+                    </motion.div>
+                </motion.div>
 
-                <div className="flex flex-col md:flex-row gap-2 mt-2">
+                <motion.div className="flex flex-col md:flex-row gap-3 mt-3" >
                     {/* card 3 */}
-                    <div className="w-full md:w-1/2 glass glassHover card-accent card-lift flex flex-col rounded-xl sm:rounded-none sm:rounded-bl-4xl p-4 sm:p-6 ">
+                    <motion.div
+                        variants={cardEffect}
+                        custom={0.5}
+                        className="w-full md:w-1/2 glass glassHover card-accent flex flex-col rounded-xl sm:rounded-none sm:rounded-bl-4xl p-4 sm:p-6 duration-300 ease-out transform hover:-translate-y-2"
+                    >
                         <p className="text-gray-400 text-sm font-['Jetbrains_Mono'] mb-4">03</p>
                         <h3 className="text-xl font-semibold font-['Cabinet_Grotesk']">Tools</h3>
                         <p className="text-purple-100 text-xs sm:text-sm mt-2">
@@ -69,10 +98,14 @@ export default function Skill() {
                                 </span>
                             ))}
                         </div>
-                    </div>
+                    </motion.div>
 
                     {/* card 4 */}
-                    <div className="w-full md:w-1/2 glass glassHover card-accent card-lift flex flex-col rounded-xl sm:rounded-none sm:rounded-br-4xl p-4 sm:p-6 ">
+                    <motion.div
+                        variants={cardEffect}
+                        custom={0.75}                        
+                        className="w-full md:w-1/2 glass glassHover card-accent flex flex-col rounded-xl sm:rounded-none sm:rounded-br-4xl p-4 sm:p-6 duration-300 ease-out transform hover:-translate-y-2"
+                    >
                         <p className="text-gray-400 text-sm font-['Jetbrains_Mono'] mb-4">04</p>
                         <h3 className="text-xl font-semibold font-['Cabinet_Grotesk']">Deployment</h3>
                         <p className="text-purple-100 text-xs sm:text-sm mt-2">
@@ -88,9 +121,9 @@ export default function Skill() {
                                 </span>
                             ))}
                         </div>
-                    </div>
+                    </motion.div>
 
-                </div>
+                </motion.div>
 
             </motion.section>
         </>

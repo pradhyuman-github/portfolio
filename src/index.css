@@ -56,7 +56,10 @@ body {
 
 
 /* TOP ACCENT LINE ON HOVER */
-.card-accent { position: relative; overflow: hidden; }
+.card-accent { 
+  position: relative; 
+  overflow: hidden; 
+}
 .card-accent::before {
   content: '';
   position: absolute; top: 0; left: 0; right: 0; height: 1px;
@@ -65,5 +68,9 @@ body {
 }
 .card-accent:hover::before { transform: scaleX(1); }
 
-.card-lift { transition: transform 0.2s; }
-.card-lift:hover { transform: translateY(-3px); }
+.card-lift { 
+  transition: transform 0.2s ease; 
+}
+.card-lift:hover { 
+  transform: translateY(-6px); 
+}
